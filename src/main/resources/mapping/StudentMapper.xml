@@ -25,4 +25,8 @@
              #{email}
              )
     </insert>
+
+    <select id="queryAll" resultType="com.zl.vo.StudentVO">
+        select name,age,address,email from student;
+    </select>
 </mapper>

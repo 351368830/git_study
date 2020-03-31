@@ -20,4 +20,10 @@ public interface StudentMapper extends MarkerInterface {
      * @return 成功条数
      */
     int insertOne(StudentVO studentVO);
+
+    /**
+     * 查询所有数据
+     * @return List<StudentVO>
+     */
+    List<StudentVO> queryAll();
 }

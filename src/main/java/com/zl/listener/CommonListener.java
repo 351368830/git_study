@@ -29,14 +29,12 @@ public class CommonListener<T> extends AnalysisEventListener<T> {
         if (list.size() >= BATCH_COUNT) {
             saveData();
             list.clear();
-            return;
         }
-        saveData();
     }
 
     @Override
     public void doAfterAllAnalysed(AnalysisContext analysisContext) {
-
+        saveData();
     }
 
     private void saveData() {
