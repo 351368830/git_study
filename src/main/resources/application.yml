@@ -9,4 +9,8 @@ mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml
   type-aliases-package: com.zl.vo
 
+zl:
+  db:
+    sql.path: db.sql
+
 
